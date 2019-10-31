@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Where To Put JavaScript Code">
+  <title>Where To Put JavaScript Code</title>
+  <!-- <link rel="stylesheet" href="css/nomalize.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <script type="text/javascript">
+      // افضل مكان لوضع تنسيق الجافا سكربت يكون بعد ملف السي اس اس
+      // في قسم الهيد والسبب هو ان في حالة حدوث اي مشكلة في ملف الجافا سكربت لا يؤثر
+      // على تنسيق الصفحة
+      document.write(" <p>Hello World form head!</p>");
+    </script> -->
+  <!-- افضل طريقة في كتابة سكربت جافا سكربت هو كتابته في ملف خارجي ومن ثم استدعائه
+    في اي موضع نحتاجة -->
+  <!-- <script src="js/test.js"></script> -->
+  <!-- الخاصية الرئيسة بوضع ملف الجافا سكربت في الهيد انه سوف يقوم بتحميل الجافا قبل
+    html -->
+</head>
+
+<body>
+  <div class="">
+    Hello JavaScript Form page
+  </div>
+  <div class="">
+    Hello JavaScript Form page
+  </div>
+  <div class="">
+    Hello JavaScript Form page
+  </div>
+  <!-- <script>
+      document.write("<p>Hello World form body!</p>");
+    </script> -->
+  <!-- <script src="js/test.js"></script>
+    <script src="js/test2.js"></script>
+    <script src="js/test2.js"></script> -->
+  <!-- افضل مكان لوضع وسوم الجافاسكربت قبل نهاية البودي
+      حتى يتحمل اخر شيء بالصفحة بعد تحميل كل شيء لضمان سرعة تحميل الصفحة-->
+  <script src="js/alert.js"></script>
+</body>
+
+</html>
