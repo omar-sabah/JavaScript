@@ -1,0 +1,11 @@
+15 Function - Basic
+16 - Function - Return
+17 - Function - With Parameters
+18 - Function - Advanced And Self Invoke //الدالة تستدعي وتنفذ نفسها مباشرتا بدون حدث او كلك
+19 - Switch, Case, Break
+20 - Scope Part 1
+21 - Scope Part 2
+
+
+
+

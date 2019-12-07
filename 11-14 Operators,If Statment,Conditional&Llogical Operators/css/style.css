@@ -1,0 +1,18 @@
+body{
+  font-family: Arial,Tahoma,sans-serif;
+  background-color: #E7E7E7;
+}
+.math,.ifst,.condop,.logicalop{
+  border: 1px solid #DDD;
+  background: #FFF;
+  padding: 0 0 10px 10px;
+  margin-bottom: 10px;
+}
+.op{
+  display: inline-block;
+  font-size: 18px;
+  background: #F00;
+  color: #FFF;
+  padding: 10px;
+
+}

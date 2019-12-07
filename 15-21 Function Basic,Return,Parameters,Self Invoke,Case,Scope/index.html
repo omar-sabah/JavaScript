@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <title></title>
+  <!-- <link rel="stylesheet" href="css/nomalize.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- الشرح في ملفات الجافا سكربت -->
+  <div class="">
+    <h1>Basic Function</h1>
+    <button onclick="sayHello()">Say Hello</button>
+  </div>
+  <div class="">
+    <h1>Function - Return</h1>
+    <button onclick="getMyAge();">Get My Age </button>
+    <p id="age"></p>
+  </div>
+  <div class="">
+    <h1>Function - With Parameters</h1>
+    <input type="text" placeholder="Enter Your First Name" id="fname">
+    <input type="text" placeholder="Enter Your Last Name" id="lname">
+    <input type="text" id="fage" onclick=>
+    <button onclick="getMyInfo()">Get My Info </button>
+    <p id="myinfo"></p>
+  </div>
+  <div>
+    <h1>Calculate Product Price after insert dicount Price through Prompet </h1>
+    <p id="total"></p>
+  </div>
+  <div>
+    <h1>Self invok when you run a function without any event just auto run </h1>
+    <div class="products">
+      <p>USA=<span id="dollar1">100</span><span>$</span></p>
+      <p>TR=<span id="tr1"> </span> <span>TL</span></p>
+    </div>
+
+    <div class="self">
+      <input type="text" id="dollar">
+      <button onclick="calcPrice()">calc</button>
+    </div>
+    <div id="message" class="self"></div>
+  </div>
+  <div>
+    <h1>Global Scope & Local Scope المجال الواسع والضيق لتعريف المتغيرات</h1>
+    <p id="name1"></p>
+    <p id="name2"></p>
+  </div>
+
+  <script type="text/javascript" src="js\basic.js"></script>
+  <script type="text/javascript" src="js\returnInfo.js"></script>
+  <script type="text/javascript" src="js\parameters.js"></script>
+  <script type="text/javascript" src="js\selfInvok.js"></script>
+  <script type="text/javascript" src="js\caseStatment.js"></script>
+  <script type="text/javascript" src="js\scope.js"></script>
+</body>
+
+</html>
