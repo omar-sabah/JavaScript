@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <title></title>
+  <!-- <link rel="stylesheet" href="css/nomalize.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- الشرح في ملفات الجافا سكربت -->
+  <div>
+    <h1>44 - Loop - For</h1>
+    <h3>
+      loop For Syntax : for (Initialization ; Condition ; Final Expression ) { <br>
+
+      code Statment ; <br>
+
+      } <br>
+      Initialization : القيمة الابتدائية للمتغير الذي يشغل اللوب <br>
+
+      Condition : شرط التوقف <br>
+
+      Final Expression : العملية التي سوف تنفذ اذ لم يتحقق اللوب
+
+    </h3>
+  </div>
+  <div>
+    <h1>45 - Loop - For In</h1>
+    <h3>
+      * Object Syntax : var ObjectName = { <br>
+      * Key1: property 1, // الخاصية : المفتاح <br>
+      * Key2 : property 2 <br>
+      * } <br>
+      *
+      * var Xkey ; نعرف متغير <br>
+      * For In Syntax : for ( Xkey in objectName ) // بينما هذا المتغير يحمل كل مفاتيح الاوبجكت <br>
+      * { <br>
+      if (objectName.hasOwnProperty(Xkey)) // مهمة جدا لفلترة الخواص في حالة كانت غير موجودة لا يجلبها <br>
+      {
+      Any Statment code ; اي كود وفي مثالنا ستنطبع قيم الخواص كما يلي <br>
+      console.log(objectName[Xkey]); // هنا سوف يطع جميع الخواص لهذا الاوبجكت <br>
+
+      } <br>
+      }
+
+    </h3>
+  </div>
+  <div id="forAdvanced">
+    <h1>46 - Loop - For Advanced</h1>
+    <h3>
+      1 - نستطيع كتابة الفور باختصار كما يلي <br>
+      var i = 0; <br>
+      for ( ; ; ) { <br>
+      if (i >= 10) break ; // شرط التوقف والخروج <br>
+      console.log ( i ); <br>
+      i ++ ; // الزيادة بمقدار 1 <br>
+
+      } <br>
+
+
+      2 - سوف نعمل على خلق عنصر لست جديد من خلال document.write (" <>"); <br>
+        وللعلم انها ليست الطريقة المثلى لخلق العناصر ولكنها من باب التعليم فقط <br>
+
+    </h3>
+    <input type="text" id="startYear" placeholder="ادخل سنة البداية">
+    <input type="text" id="endYear" placeholder="ادخل سنة النهاية">
+    <button id="buidList">Create list</button>
+  </div>
+
+  <div>
+    <h1>#47 - Loop - While , Do While</h1>
+    <h3>
+      1- While Syntax : <br>
+
+      while (Conditon){ <br>
+      code Statments; <br>
+      } <br>
+
+      2- Do While Syntax: <br>
+
+      do { <br>
+      code Statments; <br>
+      } <br>
+      while (Conditon);
+    </h3>
+  </div>
+  <div>
+    <h1>#48 - Loop - Control</h1>
+    <h3>
+      1- break Syntax : <br>
+      break ; // للخروج من تنفيذ اللوب مع اللغاء قيمة الشرط التي نقارن <br>
+      2- continue Syntax : <br>
+      continue ; // لاكمال اللوب مع الغاء قيمة الشرط التي نقارن عليها <br>
+      3- label control Syntax : <br>
+      labelName : // لتقسيم الكود الى اقساء واعطاء كل قسم اسم معين نستطيع التحكم فيه من خلال الـ <br>
+      break ; & continue;
+
+    </h3>
+  </div>
+  <div>
+    <h1>#49 - Loop - Practice</h1>
+    <h3>تم شرح جميع التمارين سابقا فقط مراجعة لا شيء جديد</h3>
+  </div>
+
+  <script src="js/loopFor.js"></script>
+  <script src="js/loopFoIn.js"></script>
+  <script src="js/loopForAdvanced.js"></script>
+  <script src="js/loopWhileDoWhile.js"></script>
+  <script src="js/loopControl.js"></script>
+
+</body>
+
+</html>

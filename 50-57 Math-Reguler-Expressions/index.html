@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title></title>
+    <!-- <link rel="stylesheet" href="css/nomalize.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <!-- الشرح في ملفات الجافا سكربت -->
+      <div>
+        <h1>50 - Math - Ceil </h1>
+        <h3>
+            Syntax : Math.ceil(X): السقف يقرب العدد لاقرب عدد اعلى <br>
+            Math.ceil(4.2)=5 <br>
+            Math.ceil(-4.8)= -4
+        </h3>
+      </div>
+      <div>
+        <h1>51 - Math - Floor</h1>
+        <h3>
+              Syntax : Math.floor(X): الارضي يقرب لاقرب عدد للاسفل <br>
+              Math.floor(4.2)=4 <br>
+              Math.floor(-4.8)= -5 <br>
+        </h3>
+      </div>
+      <div>
+        <h1>52 - Math - Round</h1>
+        <h3>
+          Syntax : Math.round(X): يستخدم لتقريب الاعداد حسب المنطق الرياضي <br>
+          Math.round(4.2) = 4 <br>
+          Math.round(4.5) = 5 <br>
+          Math.round(-4.8)= -5 
+
+        </h3>
+      </div>
+      <div>
+        <h1>53 - Math - Min Max</h1>
+        <h3>
+                Min Syntax: Math.min(value1,value2,value3,...); // لايجاد اصغر قيمة في المدخلات <br>
+                
+                
+                Max Syntax: Math.max(value1, value2, value3, ...); // لايجاد اكبر قيمة يف المدخلات <br>
+                
+                نستطيع دمج هذه الدوال مع الدوال السابقة لتسهيل استخراج اي قيمة نريدها <br>
+                Math.max(Math.round(Math.ceil(x) + 10.5)); // حسب الحاجة التي نريد عملها <br>
+
+        </h3>
+
+      </div>
+      <div>
+            <h1>54 - Math - Random </h1>
+            <h3>
+                    Random Syntax : Math.random(): لجلب ارقام عشوائية على هذا الشكل 0.7895544222111  <br>
+                    نستخدم الدوال السابقة لجلب رقم صحيح ويكون اكثر الاستخدام مع هذه الدالة <br>
+                    Math.floor() +1 // لتجنب الحصول على رقم الصفر 
+
+            </h3>
+      </div>
+      <div>
+
+        <h1>55 - Regular Expression - Intro</h1>
+        <h3>
+          التعابير المنطقية <br>
+          Regular Expression Syntax : <br>
+          / pattern / attributes: خاصة بعلوم الحاسبات وتستعمل في جميع لغات البرمجة وتستخدم في عمليات <br>
+          Search | Replace | Match | Split | Test <br>
+          Attributes list <br>
+          [ i ] => case insensitive لالغاء حساسية الاحرف <br>
+          [ g ] => Global Search للبحث في جمع السطر عن كلمة او حرف <br>
+          [ M ] => Multi Line Search للبحث في اكثر من سطر وسوف نتطرق اليها لاحقا <br>
+
+        </h3>
+        <h1>56 - Regular Expression - Brackets</h1>
+        <h3>
+          Brackts Use <br>
+          [...] Character <br>
+          [^...] Not Character <br>
+          [a-z] Range small Letters <br>
+          [A - Z] Range Capital Letters <br>
+          [0 - 9] Range Numbers <br>
+          [^0 - 9] Not Range Numbers <br>
+          [A-g] = Range [A-Z] & Range [a-g] <br>
+          [0-9a-z] Double Range 
+
+        </h3>
+        <h1>57 - Regular Expression - Quantifiers</h1>
+        <h3>
+          Quantifiers : تحديد مقدار الاحرف او الارقام المراد اجراء عملية عليها مثل تبديلها مثلا <br>
+          Letter+ => word contin one Letter <br>
+          Letter{Number} => word contain Number of Letter <br>
+          Letter{Nmber,Number}=> word contain Number Or Number <br>
+          Letter{Number,} => word contain At least Number <br>
+        </h3>
+      </div>
+      <script src="js/mathCiel.js"></script>
+      <script src="js/mathFloor.js"></script>
+      <script src="js/mathRound.js"></script>
+      <script src="js/mathMinMax.js"></script>
+      <script src="js/mathRandom.js"></script>
+      <script src="js/regularExpressions.js"></script>
+
+  </body>
+</html>

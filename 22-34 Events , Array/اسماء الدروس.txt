@@ -1,0 +1,13 @@
+22 Events Part 1 - onload, onclick, ondblclick
+23 Events Part 2 - onkeydown, onkeypress, onkeyup
+24 Events Part 3 - onmouseover, onmouseout, onchange
+25 - Array Intro
+26 - Array Check
+27 Array [ Get - Set ] Length
+28 - Array Methods - Convert To String
+29 - Array Methods - Add Items
+30 - Array Remove Items
+31 - Array Sort
+32 - Array Combine And Slice
+33 - Array Search
+34 - Array Methods Practice

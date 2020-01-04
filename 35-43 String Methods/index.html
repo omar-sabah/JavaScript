@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <title></title>
+  <!-- <link rel="stylesheet" href="css/nomalize.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- الشرح في ملفات الجافا سكربت -->
+  <div>
+    <h1>35 - Strings Methods - Convert To String</h1>
+    <h3>
+      typeof(x) ; لمعرفة نوع المتغير سواء سترنج او شيء اخر <br>
+      x.tostring(); لتغير نوع المتغير من اي نوع الى سترنغ <br>
+      String(x); نفص الدالة السابقة ولكن غير محبذ استخدامها <br>
+      x.length(); لمعرفة عدد حروف المتغير</h3>
+  </div>
+  <div>
+    <h1>36 - Strings Methods - Locate A String</h1>
+    <h3> Syntax : indexOf(value,start position) ; search form first >>to>> Defult = 0 <br>
+      Syntax : lastIndexOf(value, start position); search form first << to << last Defult=0 <br>
+        Syntax : search(value); search from first>>to>> last <br>
+        نتيجة البحث ستكون رقم الاندكس للحرف الاول لبداية الكلمة ويرجع قيمة واحدة
+        اي ان اذا كانت هناك اكثر من كلمة في الجملة يرجع قيمة او نتتيجة يجدها بالبحث
+        عملية البحث حساسة لحالة الاحرف اي يجب ان تكون القيمة المراد البحث عنها تطابق تماما الكلمة في الجملة
+        وفي مراحل متقدمة سوف نتعلم كيفية الغاء خاصية الحساسية لحالة الاحرف
+        في حالة كانت الكلمة المراد البحث عنها غير موجودة سيرجع قيمة
+        -1</h3>
+  </div>
+  <div>
+    <h1>37 - Strings Methods - Split A String</h1>
+    <h3>
+      * split Syntax :stringName.split( separator , limit ) يستعمل لتحويل السترنغ الى مصفوفة استطيع التحكم بها <br>
+      * separator : هو نوع الفاصلة الذي نحدده للفصل بين العناصر سواء يكون - او " " او اي فاصلة نحددها <br>
+      * limit : هو الرقم الذي يحدد العناصر التي اريد ان اظهرها <br>
+      * slice Syntax : stringName.slice ( Start no , End no (Optional)); يبقى نوع العنصر سترنغ
+      * تعمل على قطع جزء من السترنغ <br>
+      x.slice(-3); لجلب اخر ثلاثة حروف <br>
+      * substr Syntax : stringName.substr(Start , length(Optional) ) يبقى سترنغ ويقع من البداية ونعطيه مسار او طول القطع
+      كم
+      حرف بدل النهاية <br>
+      * substring Syntax: stringName.substring(Start no, End no(Optional)); يبقى نوع العنصر سترنغ
+      * تعمل على قطع جزء من السترنغ <br>
+      * whtat is the deferent between slice & substring is : x.slice (19,4 ) ; it's wrong! || x.substring(19,4) ==
+      x.substring(4,19);
+    </h3>
+  </div>
+
+  <div>
+    <h1>38 - Strings Methods - Find And Replace</h1>
+    <h3>
+      * cahrAt(index) : لجلب قيمة الحرف من خلال ادخال الاندكس لهذا الحرف <br>
+      * stringName.charAt(5);<br>
+      *
+      * charCodeAt(index) : لجلب قيمة الكود لهذا الحرف في ألـ <br>
+      * HTML ونستطيع التأكد من كود اي حرف او رمز من خلال الموقع التالي <br>
+      * <a href="https://unicode-table.com/en/" target="_blank">هنا</a><br>
+      * stringName.charCodeAt(index); <br>
+      *
+      * replace(value,new value) : نستطيع من خلال هذه الدالة استبدال اي قيمة داخل السترنغ باي قيمة جديدة وفي حالة تكرار
+      القيمة <br>
+      القديمة اكثر من مكان سيتم تبديل اول <br>
+      * قيمة فقط واذا اردنا استبدال جميع القيم نستخدم الـ <br>
+      * regular Expresion : فيه مواضيع متقدمة وبسيطة في نفس الوقت سنأخذ مثالين للتوضيح <br>
+      * /value1/ g : هذا الايعاز سيعمل على مقارنة القيمة المعطاه بكل السترنغ المراد البحث فيه ومن ثم اجراء اي عملية
+      نحتاج <br>
+      * /value1/ i : لالغاء حالة التحسس من حالة الاحرف سواء كبيرة او صغية <br>
+      *
+      * stringName.replace ( /omar/ g i, "Ali "); هنا سوف يستبدل قيمة عمر بقيمة على اينما يجده في السترنغ <br>
+
+    </h3>
+  </div>
+  <div>
+    <h1>39 - Strings Methods - Concatenating</h1>
+    <h3>
+      * String.formCharCode(Num1,Num2,Num3,...); كتابة كلمة من خلال كود الحروف وتجميعهم من خلال هذه الدالة لتخرج كلمة
+      <br>
+      * string1.concat(string1,string2,string3); تجميع اكثرمن جملة ودمجهم مع جملة اخرى <br>
+    </h3>
+
+    <h1>40 - Strings Methods - Convert Letters</h1>
+    <h3>var massage1 = "I Love JavaScript"; <br>
+      console.log(massage1.toLowerCase()); // i love javascript <br>
+      console.log(massage1.toLocaleLowerCase()); // i love javascript تنفع في اللغات الغريبة مثل التركية وما شابه <br>
+      console.log(massage1.toUpperCase()); //I LOVE JAVASCRIPT <br>
+      console.log(massage1.toLocaleUpperCase()); // I LOVE JAVASCRIPT تنفع في اللغات الغريبة مثل التركية وما شابه</h3>
+  </div>
+  <div>
+    <h1>41 - Strings Methods - All Reference</h1>
+    <h3>
+        * * stringName .trim(): لازالة الفراغات قبل وبعد السترنغ <br>
+        *
+        * stringName.link("http:\\www.google.com") : لتحويل السترنغ الى لنك نستطيع الوصول اليه من خلال الضغط على هذا السترنغ <br>
+        *
+        *<a href="http://developer.mozilla.org/en-US/ " target="_blank" >MDN</a>: موقع لاحتراف لغات البرمجة للويب <br>
+                *<a href="http://www.w3schools.com " target="_blank">W3School</a>: موقع اخر ويعتبر الثاني بعد الموقع السابق لاحتراف لغات البرمجة للويب
+
+
+    </h3>
+  </div>
+  <div>
+    <h1>42 - Strings Methods - Chain</h1>
+  
+    <h3>
+          * وهي طريقة لاختصار كتابة الدوال في سطر واحد بدل تعدد الاسطر وطول الكود <br>
+          *
+          var myString = myNumber.toString().replace(/0/g, 1).split("");
+
+    </h3>
+  </div>
+  <div>
+    <h1>43 - Strings Methods - Practice</h1>
+    <h3>
+
+
+    </h3>
+  </div>
+
+  <script src="js/stringMethods.js"></script>
+  <script src="js/locatingString.js"></script>
+  <script src="js/splitString.js"></script>
+  <script src="js/findReplace.js"></script>
+  <script src="js/ConcatConvert.js"></script>
+  <script src="js/allReference.js"></script>
+  <script src="js/chainMethod.js"></script>
+    <script src="js/methodsPractice.js"></script>
+
+</body>
+
+</html>

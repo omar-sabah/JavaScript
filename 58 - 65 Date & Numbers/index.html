@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <title></title>
+  <!-- <link rel="stylesheet" href="css/nomalize.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- الشرح في ملفات الجافا سكربت -->
+
+  <div>
+    <h1>58 - Date - Date Intro</h1>
+    <h3>
+      في هذا الفصل يسوف نتعامل مع التاريخ يحتوي على دوال جاهز لكل ما يخص التعامل مع التواريخ ل<br> <br>
+
+      1- var x = new Date(); <br> <br>
+      console.log(x) ; : يجلب التاريخ والوقت لهذا اليوم حتى لحظة الاستدعاء باليوم والشهر والسنة والساعة والدقيقة
+      والثانية <br> <br>
+      واجزاء الثانية حسب التوقيت العالمي <br> <br>
+      Tue Dec 31 2019 12:08:41 GMT+0300 (GMT+03:00) <br> <br>
+
+      2- var x = new (Millseconds); : print millesecond form UTC 1 1 1970 يوم انطلاق برمجة اليونكس <br><br>
+      1 Second = 10000 millesecond <br> <br>
+
+      3- var x = new Date(String); => var x = new Date(" Julay 24, 1979 01:30:10"); <br><br>
+      console.log(x) ; // Tue Jul 24 1979 01:30:10 GMT+0300 (GMT+03:00) يعطينى التاريخ مضاف اليه اليوم <br> <br>
+
+      4- var x new Date(Year , Month , Day,Hour,Minutes,Sceconds,Milleseconds) ; ادخال تاريخ كامل <br> <br>
+      مع ملاحظة ان الشهر يبدأ من الصفر اي عندما نريد كتابة الشهر الـ 11 ندخل 10 <br> <br>
+
+      5- - https://www.timeanddate.com/ : موقع لمعرفة التوقيت العالمي لا دولة <br> <br>
+
+    </h3>
+
+    <h1> 59 - Date - Date Format </h1>
+    <h3>
+      Date Format اشكال التاريخ <br> <br>
+
+      Full Format : كما كتبناه بالتفصل بالدرس الاول <br> <br>
+      Long Format : ايضا ضمن الدرس الاول عندما كتبنا التاريخ باشكال مختلفة <br> <br>
+      Shor Formt : new Date(10/03/1990); نستطيع كتابتة التاريخ باختصار بشرط ان يأتي الشهر قبل اليوم ولا يهم في حالة جاء
+      السنة <br> <br>
+      قبل الكل او بعدها <br> <br>
+      ISO formt : (YYYY-MM-DD hh:mm:ss TZD== time zone لاي بلد) <br> <br>
+
+      Js Ignore commas : تتجاهل الكوما في التاريخ <br> <br>
+      Js Month Insensitive : غير حساسة لكيفية كتابة الشهر احرف كبيره او صغيرة او بالخطأ هي سوف تصحح الكتابة <br> <br>
+      [Month,Day, Year] or [Day,Month,Year] باستثناء حالة Sort format <br> <br>
+
+    </h3>
+    <h1>60 - Date - Date Functions Part 1</h1>
+    <h3>
+      getDate() // Day of the Month 1-31 <br> <br>
+      getDay() // Day of The Week 0-6 => sun=0 to sat=6 <br> <br>
+      getFullYear() // Get the Full Year <br> <br>
+      getHours() // Get Hours 0-59 <br><br>
+      getMintes()// Get Mintes 0-59 <br><br>
+      getSeconds() // Get Seconds 0-59 <br><br>
+      getMilliseconds() // Get Milliseconds from 0-999 <br><br>
+      getTime()// Get Number of Millliseconds form 1970 or Specific date <br><br>
+      getTimeZoneOffset() // Get Def between UTC & Your Local Time in Mintes and with nagative value like -180=+3 or
+      -120 = +2 <br><br>
+      جميع الدوال السابقة بالتوقيت المحلي نستطيع تطبيقها مع اضافة <br><br>
+      UTC like getUTCHours(); سوف تعطينا الساعة حسب التوقيت العالمي <br><br>
+
+    </h3>
+    <h1>61 - Date - Date Functions Part 2</h1>
+    <h3>
+      في هذه الدوال سوف نعطي او نخصص تاريخ وليس نأخذ تاريخ كما في دوال الـ <br><br>
+      get <br>
+      setDate() // Day of the Month 1-31 // على فرض اعطيناها قيمة 0 سوف يحسب اخر يوم من الشهر السابق لانه خارج نطاق
+      الشهر
+      الحالي <br><br>
+      وكذلك اذا اعطيناه قيمة 31 سوف يجلب اول يوم من الشهر التالي وتنطبق هذا المبدأ على جميع الدوال اللاحقة <br><br>
+      setDay() // Day of The Week 0-6 => sun=0 to sat=6 <br><br>
+      setFullYear(year[req],Month[opt],Day[opt]) // them Months Start form 0-11 is very importent *omsa يبدأ عد الاشهر
+      من <br><br>
+      الصفر فيجب ان ننتبه حتى لا يقفز على السنه التالية او السابقة <br><br>
+      setHours(Hours[req],Mintes[opt],Seconds[opt],Milliseconds[opt]) <br><br>
+      setMintes(’Mintes[req],Seconds[opt],Milliseconds[opt]) <br><br>
+      setSeconds(ٍSeconds[req],Milliseconds[opt]); <br><br>
+      setMilliseconds(Milliseconds[req]) // from 0-999<br><br>
+      setMonth(Month[req],Day[opt]);<br><br>
+      ***************************************************** <br><br>
+      نفس الدوال السابقة ولكن تأتي بالتوقيت العالمي UTC <br><br>
+
+    </h3>
+    <h1>62 - Date - Date Functions Part 3</h1>
+    <h3>
+      1- now = Date.now() : get milliseconds from 1-1- 1970 to now <br><br>
+      min = 1000 * 60, <br><br>
+      hour = min * 60, <br><br>
+      day = hour * 24, <br><br>
+      month = day * 30, <br><br>
+      year = month * 12; <br><br>
+      <br><br>
+      2- now2 = Date.parse(" 1 Oct 1980 12:20:10 ") : نعطي تاريخ كامل والوقت حتى يحسب من تاريخ 1970 وحتى هذا التاريخ
+      <br><br>
+      // دوال لجلب التاريخ بشكل مختصر <br><br>
+      3- fullDate.toISOString(); // 2020-01-04T18:41:02.825Z <br><br>
+      4- console.log(fullDate.toDateString(); //Sat Jan 04 2020 <br><br>
+      5- console.log(fullDate.toTimeString() ; //21:41:02 GMT+0300 (GMT+03:00) <br><br>
+
+    </h3>
+  </div>
+  <div>
+    <h1>63 - Numbers - Intro </h1>
+    <h3>
+      1- لا توجد انواع للارقام في الجافا سكربت تتعامل معها على انها <br><br>
+      64 bit floating point <br><br>
+      2 - تتعامل جافا سكربت مع نظام الـ <br><br>
+      Hexadecimal { 0، 1، 2، 3، 4، 5، 6، 7، 8، 9، A، B، C، D، E، F } <br><br>
+      3- تتعامل جافا سكربت مع نظام الثماني <br><br>
+      Octal {0,1,2,3,4,5,6,7} <br><br>
+      عندما نريد افهام جافا سكربت ان الرقم المدخل هو ثماني يجب ان يبدأ بـ 0 <br><br>
+      EXP : 076 this is Octal number<br><br>
+      4 - NaN : 10 / "omar" the result is NaN <br><br>
+      5 -infinity & - infintiy : 1/0 Or -1/0<br><br>
+
+    </h3>
+    <h1></h1>
+    <h3>
+      1- .toString(): دالة لتحويل اي رقم الى سترنغ <br><br>
+      2 - .toExponential(): 8 e + 1 === > 8 * Math.pow(10, 1); دالة الاس تكتب هكذا <br><br>
+      3- (96.65).toFixed(0); // تقريب العدد قبل الفارزة 97 بدون كسور <br><br>
+      4- (96.65).toFixed(1); // 96.7تقريب العدد بعد الفارزة <br><br>
+      5 -(96.656).toFixed(2); // 96.66تقريب العدد بعد الفارزة <br><br>
+      6 parseInt("80 years") / 100 // 0.8 من اهم الدوال استعمالا تحول اي سترنغ الى رقم بشرط ان تبدأ السترنغ برقم
+      <br><br>
+
+    </h3>
+    <h1>65 - Outro and Where to Continue</h1>
+    <h3>
+      مواقع مهمة جدا يجب ان تدخل عليها وتتعمق بالجافا سكربت <br><br>
+      <a href="https://developer.mozilla.org/en-US">MDN</a> <br><br>
+      <a href=" https://www.w3schools.com/">w3schools</a><br><br>
+      <a href="https://javascript.info/">javascript.info</a><br><br>
+      <a href="https://jstherightway.org/">jstherightway.org</a><br><br>
+      <a href="https://www.javascript.com/">javascript.com</a><br><br>
+
+    </h3>
+  </div>
+  <script src="js/dateInfo.js"></script>
+  <script src="js/numbersInfo.js"></script>
+
+</body>
+
+</html>
